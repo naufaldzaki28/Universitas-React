@@ -1,0 +1,250 @@
+/* Pastikan body dan html memenuhi tinggi layar */
+
+html,
+body,
+#root {
+    height: 100%;
+    margin: 0;
+}
+
+
+/* Wrapper parent agar bisa men-stretch konten */
+
+.app-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* tinggi penuh viewport */
+}
+
+
+/* Container konten agar fleksibel */
+
+.app-container {
+    flex: 1;
+    /* mengambil space yang tersisa */
+}
+
+
+/* Navbar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #2c7a7b;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-menu li {
+    position: relative;
+    list-style: none;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav-menu li:hover {
+    color: #81e6d9;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #2c7a7b;
+    border: 1px solid #ddd;
+    padding: 5px 0;
+    min-width: 120px;
+    z-index: 10;
+}
+
+.dropdown-menu li {
+    padding: 5px 15px;
+    white-space: nowrap;
+}
+
+.dropdown-menu li:hover {
+    background-color: #f0f0f0;
+}
+
+
+/* Content */
+
+.content {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.home-buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.home-buttons button {
+    padding: 15px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #2c7a7b;
+    color: white;
+    transition: 0.3s;
+}
+
+.home-buttons button:hover {
+    background-color: #285e61;
+}
+
+
+/* Form */
+
+.data-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.data-form input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.data-form button {
+    padding: 8px 15px;
+    border: none;
+    background-color: #2c7a7b;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.data-form button:hover {
+    background-color: #285e61;
+}
+
+
+/* Tabel */
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.data-table th,
+.data-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.data-table th {
+    background-color: #2c7a7b;
+    color: white;
+}
+
+.data-table button {
+    margin-right: 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.data-table button:first-child {
+    background-color: #3182ce;
+    color: white;
+}
+
+.data-table button:first-child:hover {
+    background-color: #2b6cb0;
+}
+
+.data-table button:last-child {
+    background-color: #e53e3e;
+    color: white;
+}
+
+.data-table button:last-child:hover {
+    background-color: #c53030;
+}
+
+
+/* Container header list */
+
+.list-header {
+    display: flex;
+    justify-content: space-between;
+    /* Judul kiri, tombol kanan */
+    align-items: center;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+
+/* Judul daftar */
+
+.list-header h2 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+}
+
+
+/* Tombol Tambah Data */
+
+.list-header button {
+    background-color: #2c7a7b;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.list-header button:hover {
+    background-color: #2c7a7b;
+}
+
+.footer {
+    background-color: #2c7a7b;
+    color: white;
+    padding: 20px;
+    margin-top: 50px;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+}
+
+.footer a {
+    color: #81e6d9;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
